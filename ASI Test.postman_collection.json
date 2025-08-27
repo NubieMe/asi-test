@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "7dc07a12-2be0-4e54-aa23-a2313526def4",
+		"name": "ASI Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44338315",
+		"_collection_link": "https://fahmi-5690107.postman.co/workspace/Fahmi's-Workspace~8810009c-a8d0-4284-84c7-57dbef5b17e6/collection/44338315-7dc07a12-2be0-4e54-aa23-a2313526def4?action=share&source=collection_link&creator=44338315"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"realname\": \"john doe\",\n    \"username\": \"jondo\",\n    \"email\": \"jondo@mail.com\",\n    \"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/register",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"jondo\",\n    \"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
